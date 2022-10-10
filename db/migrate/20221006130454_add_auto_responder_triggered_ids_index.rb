@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-class AddAutoResponderTriggeredIdsIndex < ActiveRecord::Migration[7.0]
+class AddAutoResponderTriggeredIdsIndex < ActiveRecord::Migration[6.1]
   def change
     add_index :topic_custom_fields,
       %i[topic_id value],
